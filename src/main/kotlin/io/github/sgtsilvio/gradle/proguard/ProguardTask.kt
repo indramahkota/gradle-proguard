@@ -16,13 +16,13 @@ import java.io.File
 /**
  * Gradle task type to define ProGuard tasks.
  *
- * This implementation differs from the official ProGuard gradle plugin in the following points:
+ * This implementation differs from the official ProGuard Gradle plugin in the following points:
  *  - ProGuard and the Gradle daemon are decoupled:
  *    - How: Runs ProGuard in a separate process (via the command line interface) instead of in the Gradle daemon
  *    - Why: ProGuard tends to use a lot of memory which can expire the daemon or even require increasing its heap.
  *  - ProGuard's and this plugin's version are decoupled:
- *    - How: The Proguard base dependency is added to the `proguardClasspath` configuration and can be customized.
- *      Additionally, only the ProGuard configuration parameters that deal with files are modelled as Gradle input and
+ *    - How: The ProGuard base dependency is added to the `proguardClasspath` configuration and can be customized.
+ *      Additionally, only the ProGuard configuration parameters that deal with files are modeled as Gradle input and
  *      output properties, because these are the only ones necessary for up-to-date checks and caching.
  *      All other (maybe ProGuard version specific) configurations can be passed as string arguments via [rules].
  *    - Why: Using a bug fix in either ProGuard or this plugin should not need an update of the other tool.

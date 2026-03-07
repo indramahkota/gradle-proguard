@@ -12,7 +12,7 @@ import org.gradle.kotlin.dsl.withType
 /**
  * Gradle plugin to ease using ProGuard.
  *
- * The differences of this plugin and the official ProGuard gradle plugin and the benefits are described [here][ProguardTask].
+ * The differences of this plugin and the official ProGuard Gradle plugin and the benefits are described [here][ProguardTask].
  *
  * Registers the `proguard` extension and the `proguardClasspath` configuration.
  * You can then register [ProguardTask]s.
