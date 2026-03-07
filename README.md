@@ -30,7 +30,7 @@ This implementation differs from the official ProGuard Gradle plugin in the foll
 ```kotlin
 plugins {
     java
-    id("io.github.sgtsilvio.gradle.proguard") version "0.8.0"
+    id("io.github.sgtsilvio.gradle.proguard") version "0.9.0"
 }
 
 java {
